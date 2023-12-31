@@ -8,11 +8,11 @@ const Hero = ({movies}) => {
     <div className='movie-carousel-container'>
       <Carousel>
         {
-          movies?.map((movie)=>{
+          movies?.map((movie)=> {
             return(
-              <Paper>
+              <Paper key={movie.id}>
                 <div className='movie-card-container'>
-                  <div className='movie-card'>
+                  <div className='movie-card' style={{"--img": `url(${movie.backdrops[1]})`}}>
                     <div className='movie-detail'>
                       <div className='movie-poster'>
                         <img src={movie.poster} alt="" />
