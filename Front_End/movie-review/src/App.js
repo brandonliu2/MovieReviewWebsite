@@ -29,6 +29,9 @@ function App() {
         <Route path = "/" element={<Layout/>}>
           <Route path = "/" element={<Home movies={movies}/>}></Route>
         </Route>
+        <Route path = "/watchList" element={<Layout/>}>
+          <Route path = "/watchList" element={"Still developing"}></Route>
+        </Route>
       </Routes>
       
     </div>
